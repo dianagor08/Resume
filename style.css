@@ -1,0 +1,142 @@
+@charset "UTF-8";
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+.gradient_bg:hover{
+   -webkit-animation: gradient 15s ease infinite;
+   animation: gradient 15s ease infinite;
+}
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+ 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+* {
+  font-family: 'Courier New', monospace;
+  box-sizing: border-box;
+  border-radius: 10%;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px dotted white;
+  border-radius: 8px;
+  padding: 5px;
+  width: 20%;
+}
+/* Added an image hover color shadow effect */
+img:hover {
+  box-shadow: 0 0 20px 10px rgba(1, 46, 61, 0.5);
+  opacity: 0.7;
+}
+
+/* unvisited link */
+a:link {
+  color:white;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+h1 {
+  color: white;
+  text-shadow:2px 2px black; 
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(2, 2, 2);
+}
+
+.containerTab {
+  padding: 20px;
+  color: rgb(13, 12, 12);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+  color: white;
+  text-shadow:2px 2px black;
+  text-align: center;
+}
+h3 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: 'Courier New', monospace;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(244, 234, 246);
+  font-size: 20px;
+  color: rgb(11, 10, 10);
+  }
+
+.footer {
+  background-color: #addbf0;
+  color: hsl(0, 100%, 2%);
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
